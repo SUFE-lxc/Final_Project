@@ -1,0 +1,24 @@
+{% extends 'layout/page.html' %}
+{% block content %}
+<div class="question-title text-center">
+    <h4> All Questions</h4>
+</div>
+{% for question in questions %}
+
+<div class="card-container" ">
+  <div class="card justify-content-between">
+    <div class="container question1">
+      <a class="qtext" href="{% url 'question' question.id %}">
+          {{question.title}}</a>
+         <hr style="margin: 2px;">
+          <div class="body-ellipse" style="font-size: smaller; color:rgb(66, 74, 83)">{{question.body}}</div>
+          <div style="font-size: smaller; color:lightslategrey">{{question.created_at}}</div>
+        </div>
+    </div>
+    
+</div>
+<hr class="card-hr">
+
+{% endfor %} 
+
+{% endblock %}

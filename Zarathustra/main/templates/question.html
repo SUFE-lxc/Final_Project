@@ -1,0 +1,44 @@
+{% extends 'layout/page.html' %}
+{% block content %}
+<div class="page question-page">
+  <h1 class="question-title">{{question.title}}</h1>
+
+<div class="question-body">{{question.body}}</div>
+<span class="question-author">asked by {{question.author}} |  {{question.created_at}}</span>
+<hr .card-hr>
+<div class="response-container">
+
+    <h4 class="response-container-heading">
+        Responses
+    </h4>
+    {% if not question.responses.all %}
+    <div class="no-response-text"> No responses yet</div>
+    {% else %}
+      {% for response in question.get_responses %}
+        {% include 'components\response.html' with response=response %}
+
+      {% endfor %}  
+    {% endif %}
+</div>
+
+{% if user.is_authenticated %}
+
+<form action="" class="response-form" method="post">
+    {% csrf_token %}
+
+    <div class="field-wrapper">
+        <label for="{{response_form.body.id_for_label}}"> Your answer</label>
+        {{response_form.body}}
+        
+      </div>
+      <input type="submit" value="Send" class="submit-button"/>
+
+
+
+</form>
+</div>
+
+{% endif %}
+
+</div>
+{% endblock %}

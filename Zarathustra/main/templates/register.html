@@ -1,0 +1,43 @@
+{% extends 'layout/page.html' %}
+{% block content %}
+<div class="page register-page">
+  <h1 class="title">Registration</h1>
+
+
+<form method="POST" action="" class="register-form">
+  {% csrf_token %}
+
+  <div class="field-wrapper">
+    <label for="{{form.email.id_for_label}}">Email</label>
+    {{form.email}}
+    <span class="error"> {{form.email.errors}}</span>
+  </div>
+  <div class="field-wrapper">
+    <label for="{{form.username.id_for_label}}">Username</label>
+    {{form.username}}
+    <span class="error"> {{form.username.errors}}</span>
+  </div>
+  <div class="field-wrapper">
+    <label for="{{form.password1.id_for_label}}">password1</label>
+    {{form.password1}}
+    <span class="error"> {{form.password1.errors}}</span>
+    </div>
+    <div class="field-wrapper">
+        <label for="{{form.password2.id_for_label}}">password2</label>
+        {{form.password2}}
+        <span class="error"> {{form.password2.errors}}</span>
+        </div>
+        
+{% if form.non_field_errors %}
+<div class="non_form_errors">
+    <span class="error">{{form.non_field_errors.as_ul}}</span>
+  </div>
+  {% endif %}
+
+  <input type="submit" value="Register" class="submit-button"/>
+
+
+
+</form>
+</div>
+{% endblock %}

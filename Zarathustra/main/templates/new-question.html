@@ -1,0 +1,29 @@
+{% extends 'layout/page.html' %}
+{% block content %}
+<div class="page new-question-page">
+  <h1 class="title">Ask question</h1>
+
+
+<form method="POST" action="" class="new-question-form">
+  {% csrf_token %}
+
+  <div class="field-wrapper">
+    <label for="{{form.title.id_for_label}}">question</label>
+    {{form.title}}
+    <span class="error"> {{form.title.errors}}</span>
+  </div>
+  <div class="field-wrapper">
+    <label for="{{form.body.id_for_label}}">Description</label>
+    {{form.body}}
+    <span class="error"> {{form.body.errors}}</span>
+  </div>
+
+
+
+  <input type="submit" value="submit" class="submit-button"/>
+
+
+
+</form>
+</div>
+{% endblock %}
