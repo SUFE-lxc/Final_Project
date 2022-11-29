@@ -4,27 +4,32 @@
 <hr style="margin: 20px; border-width: 2px; border-color:rgb(133, 133, 133)">
 
 <div class="page login-page">
-<h1 class="title">Login</h1>
+  <h1 class="title">Login</h1>
 <hr style="margin: 20px; border-color:rgb(52, 114, 247)">
 
 <form method="POST" action="" class="login-form">
   {% csrf_token %}
+
 <div class="field-wrapper">
   <label for="{{form.username.id_for_label}}">Username:</label>
   {{form.username}}
   <span class="error">{{form.username.errors}}</span>
 </div>
+
 <div class="field-wrapper">
   <label for="{{form.password.id_for_label}}">Password:</label>
   {{form.password}}
   <span class="error">{{form.password.errors}}</span>
 </div>
 {% if form.non_field_errors %}
+
 <div class="non_form_errors">
   <span class="error">{{form.non_field_errors.as_ul}}</span>
 </div>
+
 {% endif %}
-<input type="submit" value="Login" class="submit-button"/>
+
+<input type="submit" value="login" class="submit-button"/>
 </form>
 
 </div>
