@@ -9,10 +9,10 @@ body {
 .title{
   margin:0 auto;
 }
-.navbar{
+.navbar{/*导航条颜色*/
   background-color: #5FBB9C;/*巴黎绿*/
 }
-.logo {
+.logo {/*左上logo*/
   font-family: 'Comic Sans MS', cursive;
   color: #Fffdd0;/*米黄*/
   font-size: 5vh;
@@ -22,7 +22,7 @@ body {
   margin:4px 0;
   line-height: 1.5em;
     height: 3em;       /* height is 2x line-height, so two lines will display */
-    overflow: hidden; 
+    overflow: hidden;
 }
 .question1{
  padding-top:8px
@@ -31,13 +31,13 @@ body {
   padding:7vh 2vw;
   margin-top: 8vh;
 }
-.nav-item a{
+.nav-item a{/*右上导航按钮*/
   font-weight:500;
   color: #Fffdd0;
-  font-family: 'Roboto', sans-serif,Arial,sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   padding: 5px 40px;
 }
-.active a{
+.active a{/*按钮标记（未实现）*/
   background-color:#5FBB9C  ;
   color: #Fffdd0;
 }
@@ -262,4 +262,3 @@ min-width: 0;}
   font-size: larger;
   font-size: larger;
 }
-
