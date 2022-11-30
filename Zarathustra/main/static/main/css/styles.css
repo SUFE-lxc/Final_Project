@@ -3,20 +3,25 @@
   font-size: 3vh;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 body {
   background-color: #eaecef;
 }
+
 .title{
   margin:0 auto;
 }
+
 .navbar{/*导航条颜色*/
   background-color: #5FBB9C;/*巴黎绿*/
 }
+
 .logo {/*左上logo*/
-  font-family: 'Comic Sans MS', cursive;
+  font-family: "华文行楷";
   color: #Fffdd0;/*米黄*/
   font-size: 5vh;
-  margin: 10vw;}
+}
+
 .body-ellipse{
   text-overflow: ellipsis;
   margin:4px 0;
@@ -24,21 +29,25 @@ body {
     height: 3em;       /* height is 2x line-height, so two lines will display */
     overflow: hidden;
 }
+
 .question1{
  padding-top:8px
 }
+
 .content{
   padding:7vh 2vw;
   margin-top: 8vh;
 }
+
 .nav-item a{/*右上导航按钮*/
   font-weight:500;
   color: #Fffdd0;
   font-family: 'Courier New', Courier, monospace;
   padding: 5px 40px;
 }
+
 .active a{/*按钮标记（未实现）*/
-  background-color:#5FBB9C  ;
+  background-color:#5FBB9C ;
   color: #Fffdd0;
 }
 
@@ -104,7 +113,6 @@ img {
   margin-top: 4px;
   padding:0 5px;
   width: fit-content;
-
 }
 .up-vote{
 grid-column: 1/2;

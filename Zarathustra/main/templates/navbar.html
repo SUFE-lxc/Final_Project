@@ -1,7 +1,5 @@
 {% load static %}
 
-
-
 <nav class="navbar navbar-expand-sm fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -13,7 +11,8 @@
       <li class=" nav-item active">
         <a href="{% url 'index' %}" >想法</a>
       </li>
-      {% if user.is_authenticated %}
+
+      {% if user.is_authenticated %}   <!--如果已经认证-->
       
       <li class=" nav-item"><a href="{% url 'new-question' %}">提问</a>
   </li>
@@ -21,10 +20,14 @@
   <li class=" nav-item"><a href="{% url 'logout' %}">退出</a>
     </li>
 
-    {% else %}
-    <li class=" nav-item"><a href="{% url 'login' %}">登录</a></li>
+    {% else %} <!-- 若未登录-->
+
     <li class=" nav-item"><a href="{% url 'register' %}">注册</a></li>
-  {% endif %}
+    <li class=" nav-item"><a href="{% url 'login' %}">登录</a></li>
+      {% endif %}
+
+
+
     </ul>
   </div>
 </nav>
