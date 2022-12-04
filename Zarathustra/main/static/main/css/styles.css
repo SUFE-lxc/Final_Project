@@ -42,7 +42,7 @@ body {
   margin-top: 8vh;
 }
 
-.nav-item a{
+.nav-item a{/*右上方导航按钮样式*/
   border: 0;
   background: none;
   text-transform: uppercase;
@@ -53,6 +53,7 @@ body {
   padding: 10px 20px;
   box-sizing: border-box;
 }
+
 
 .nav-item a:hover{/*取消默认下划线效果*/
    text-decoration:none;
@@ -94,9 +95,6 @@ body {
   border-left-color: #Fffdd0;
   transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
 }
-
-
-
 
 .card-container{
   width: 70vw; height: max-content;
@@ -148,9 +146,11 @@ img {
 .question-body,.question-author{
   margin-left:7vw ;
 }
+
 .question-author{
   color:gray;
 }
+
 .votes{
   display:grid;
   grid-template-columns:repeat(5, 25%);
@@ -163,10 +163,12 @@ img {
   padding:0 5px;
   width: fit-content;
 }
+
 .up-vote{
 grid-column: 1/2;
 font-size: small;
 }
+
 #upvotes{
   font-size: 3vh;
   margin:5px 3px;
@@ -175,12 +177,15 @@ font-size: small;
   padding:0 3px 0 ;
   width:fit-content;
 }
+
+
 .updates{
   display: grid;
   grid-template-columns: 60% 40% ;
 
   justify-content: space-between;
 }
+
 .down-vote{
   font-size: small;
   grid-column: 3/4;
@@ -195,6 +200,7 @@ font-size: small;
   grid-column: 4/5;
   width:fit-content;
 }
+
 .response-container,.response-form{
   margin-left:7vw ;
   width:auto;
@@ -318,4 +324,29 @@ min-width: 0;}
   font-weight: 700;
   font-size: larger;
   font-size: larger;
+}
+
+input[type="submit"].login{
+  float:right;
+  width: 112px;
+  height: 37px;
+  -moz-border-radius: 19px;
+  -webkit-border-radius: 19px;
+  border-radius: 19px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #5FBB9C;
+  border:1px solid #5FBB9C;
+  border:none;
+  color: #Fffdd0;
+  font-weight: bold;
+}
+input[type="submit"].login:hover{
+  background-color: #Fffdd0;
+  border:1px solid #5FBB9C;
+  color:#5FBB9C; cursor:pointer;
+}
+input[type="submit"].login:focus{
+  outline: none;
 }

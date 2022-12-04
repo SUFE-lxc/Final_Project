@@ -12,7 +12,8 @@
         <a href="{% url 'index' %}" >Home</a>
       </li>
 
-      {% if user.is_authenticated %}   <!--如果已经认证-->
+      {% if user.is_authenticated %}   <!--如果
+      已经认证-->
 
       <li class=" nav-item"><a href="{% url 'new-question' %}">New Question</a>
   </li>
@@ -21,7 +22,6 @@
     </li>
 
     {% else %} <!-- 若未登录-->
-    <meta name="referrer" content="no-referrer">
     <li class=" nav-item"><a href="{% url 'register' %}">Register</a></li>
     <li class=" nav-item"><a href="{% url 'login' %}">Login</a></li>
       {% endif %}

@@ -5,7 +5,7 @@
 
 <div class="page login-page">
   <h1 class="title">Login</h1>
-<hr style="margin: 20px; border-color:rgb(52, 114, 247)">
+<hr style="margin: 20px; border-color:rgb(52, 114, 247);text-align: center">
 
 <form method="POST" action="" class="login-form">
   {% csrf_token %}
@@ -29,7 +29,8 @@
 
 {% endif %}
 
-<input type="submit" value="login" class="submit-button"/>
+
+  <input type="submit" class="login pull-right" value="Log In" style="text-align:center;vertical-align:middel">
 </form>
 
 </div>
