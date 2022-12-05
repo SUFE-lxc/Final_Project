@@ -16,3 +16,4 @@ function handleCancelReply(responseId) {
     document.getElementById("reply-button").style.display = "block";
   }
 }
+
