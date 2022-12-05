@@ -2,6 +2,110 @@
 position: relative;
 width: 1152px;
 height: 700px;
-
-
 background: rgb(255, 247, 230);
+
+
+/* Button (类型=线框按钮, 内容文字=True, 尺寸=大, 形状=矩形, 状态=激活, 禁用=False, 前缀图标=False, 加载中=False) */
+position: absolute;
+width: 90px;
+height: 39px;
+top: 637px;
+left: 531px;
+background: rgba(0, 167, 111, 0.17);
+
+/* 问题描述 */
+position: absolute;
+width: 168px;
+height: 22px;
+top: 269px;
+left: 101px;
+color: rgba(0, 0, 0, 0.75);
+font-family: Microsoft YaHei;
+font-size: 24px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -1px;
+text-align: left;
+
+/* 问题 */
+position: absolute;
+width: 48px;
+height: 22px;
+top: 140px;
+left: 101px;
+color: rgba(0, 0, 0, 0.75);
+font-family: Microsoft YaHei;
+font-size: 24px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -1px;
+text-align: left;
+
+
+/* 提问 */
+position: absolute;
+width: 95px;
+height: 22px;
+top: 43px;
+left: 54px;
+color: rgba(3, 99, 67, 0.81);
+font-family: jiangxizhuokai;
+font-size: 48px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -1px;
+text-align: left;
+
+
+/* 矩形 1 */
+position: absolute;
+width: 168px;
+height: 72px;
+top: 23px;
+left: 26px;
+background: rgba(255, 214, 134, 0.45);
+
+
+/* 4.Input输入/5.Input输入框/2.文本域输入框/默认态 */
+position: absolute;
+width: 738px;
+height: 49px;
+top: 175px;
+left: 101px;
+box-sizing: border-box;
+border: 1px solid rgba(0, 167, 111, 0.19);
+
+
+/* 4.Input输入/5.Input输入框/2.文本域输入框/默认态 */
+position: absolute;
+width: 948px;
+height: 310px;
+top: 304px;
+left: 101px;
+box-sizing: border-box;
+border: 1px solid rgba(0, 167, 111, 0.19);
+
+/* 请输入内容 */
+position: absolute;
+width: 917.42px;
+height: 26.03px;
+top: 27.68px;
+left: 15.29px;
+color: rgba(0, 0, 0, 0.4);
+font-family: Noto Sans SC;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: -1px;
+text-align: left;
+
+
+/* Rectangle */
+position: absolute;
+width: 948px;
+height: 310px;
+top: 0;
+left: 0;
+box-sizing: border-box;
+background: rgba(255, 255, 255, 0.9);
+border: 1px solid rgba(0, 167, 111, 0.71);
