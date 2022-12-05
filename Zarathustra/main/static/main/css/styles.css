@@ -234,27 +234,114 @@ border-left: 2px dotted rgb(159, 178, 189);
 .new-question-form{
   width:70vw;
 }
-.field-wrapper {
-  display: flex;
-  width:inherit;
-  flex-direction: column;
-  margin-bottom: 2vh;
-}
-.field-wrapper label {
-  font-size: 3vh;
-  font-weight: 600;
-  text-transform: capitalize;
-  margin-bottom: 1vh;
+
+/*登录注册界面输入框格式*/
+.title {
+  color:#5FBB9C;
+  font-family:"华文彩云";
 }
 
-.field-wrapper input {
-  margin-bottom: 0.6vh;
-  border: 1px solid lightgray;
-  min-height: 4vh;
-  font-size: 3vh;
-  border-radius: 20px;
-  padding: 0 15px;
+
+div.form-item{
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+ }
+
+ input{transition: all .2s ease;}
+ input.form-style{
+  color:#8a8a8a;
+  display: block;
+  width: 90%;
+  height: 44px;
+  padding: 5px 5%;
+  border:1px solid #ccc;
+  -moz-border-radius: 27px;
+  -webkit-border-radius: 27px;
+  border-radius: 27px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background-color: #fff;
+  font-family:'HelveticaNeue','Arial', sans-serif;
+  font-size: 105%;
+  letter-spacing: .8px;
 }
+
+div#form{
+	position: absolute;
+	width:360px;
+	height:320px;
+	height:auto;
+	background-color: #fff;
+	margin:auto;
+	border-radius: 5px;
+	padding:20px;
+	left:50%;
+	top:50%;
+	margin-left:-180px;
+	margin-top:-200px;
+}
+div.form-item .form-style:focus{
+  outline: none;
+  border:1px solid #58bff6;
+  color:#58bff6;
+}
+
+div.form-item p.formLabel {
+  position: absolute;
+  left:26px;
+  top:2px;
+  transition:all .4s ease;
+  color:#bbb;
+  }
+
+.formTop{
+  top:-22px !important;
+  left:26px;
+  background-color: #fff;
+  padding:0 5px; font-size: 14px;
+  color:#58bff6 !important;
+}
+
+.formStatus{
+  color:#8a8a8a !important;
+}
+
+div.form-item .form-style:focus{
+  outline: none;
+  border:1px solid #5FBB9C;
+  color:#5FBB9C;
+}
+
+div.form-item p.formLabel {
+  position: absolute;
+  left:26px;
+  top:2px;
+  transition:all .4s ease;
+  color:#bbb;
+  }
+
+.formTop{
+    top:-22px !important;
+    left:26px;
+    background-color: #fff;
+    padding:0 5px;
+    font-size: 14px;
+    color:#5FBB9C !important;
+}
+
+.formStatus{
+  color:#8a8a8a !important;
+}
+
+
+
+
+
+
+
+
 .error {
   font-size: 3vh;
   color: red;
@@ -265,6 +352,7 @@ border-left: 2px dotted rgb(159, 178, 189);
 .non_form_errors {
   margin-bottom: 2vh;
 }
+
 
 .submit-button {
   display: block;
@@ -286,9 +374,9 @@ border-left: 2px dotted rgb(159, 178, 189);
   display: block;
 }
 .reply-button,.up-vote,.down-vote{
-border-style: none;
-color:#2874f0;
-font-size: 3vh;
+  border-style: none;
+  color:#2874f0;
+  font-size: 3vh;
 }
 
 .post-layout{
@@ -327,7 +415,7 @@ min-width: 0;}
 }
 
 /*登录界面样式设置*/
-input[type="submit"].login{
+input[type="submit"]{
   float:right;
   width: 112px;
   height: 37px;
@@ -343,17 +431,21 @@ input[type="submit"].login{
   color: #Fffdd0;
   font-weight: bold;
 }
-input[type="submit"].login:hover{
+input[type="submit"]:hover{
   background-color: #Fffdd0;
   border:1px solid #5FBB9C;
   color:#5FBB9C; cursor:pointer;
 }
-input[type="submit"].login:focus{
+input[type="submit"]:focus{
   outline: none;
 }
 
 .pull-left{
     position: absolute;
+}
+
+.pull-left a{
+  color:#5FBB9C;
 }
 
 .pull-left a:hover{/*取消默认下划线效果*/

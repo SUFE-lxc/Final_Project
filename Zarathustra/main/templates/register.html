@@ -1,32 +1,37 @@
+<script src="https://code.jquery.com/jquery-2.1.0.min.js" ></script>
 {% extends 'layout/page.html' %}
 {% block content %}
 <div class="page register-page">
-  <h1 class="title">Registration</h1>
+  <h1 class="title">ZARATHUSTRA</h1>
 
 
 <form method="POST" action="" class="register-form">
   {% csrf_token %}
 
-  <div class="field-wrapper">
-    <label for="{{form.email.id_for_label}}">Email</label>
-    {{form.email}}
-    <span class="error"> {{form.email.errors}}</span>
+   <div class="form-item">
+      <p class="formLabel">Email</p>
+    <input type="email" name="email"  id="email" class="form-style" required>
+    <span class="error"> </span>
   </div>
-  <div class="field-wrapper">
-    <label for="{{form.username.id_for_label}}">Username</label>
-    {{form.username}}
-    <span class="error"> {{form.username.errors}}</span>
+    <hr style="margin: 20px; border-width: 2px; border-color:white">
+  <div class="form-item">
+    <p class="formLabel">Username</p>
+    <input type="username" name="username"  id="username" class="form-style" required >
+    <span class="error"> </span>
   </div>
-  <div class="field-wrapper">
-    <label for="{{form.password1.id_for_label}}">password1</label>
-    {{form.password1}}
-    <span class="error"> {{form.password1.errors}}</span>
+    <hr style="margin: 20px; border-width: 2px; border-color:white">
+  <div class="form-item">
+    <p class="formLabel">Password1</p>
+    <input type="password1" name="password1" id="password1" class="form-style" required >
+    <span class="error"> </span>
     </div>
-    <div class="field-wrapper">
-        <label for="{{form.password2.id_for_label}}">password2</label>
-        {{form.password2}}
-        <span class="error"> {{form.password2.errors}}</span>
+    <hr style="margin: 20px; border-width: 2px; border-color:white">
+    <div class="form-item">
+        <p class="formLabel">Password2</p>
+        <input type="password2" name="password2" id="password2" class="form-style" required >
+        <span class="error"> </span>
         </div>
+    <hr style="margin: 20px; border-width: 2px; border-color:white">
 
 {% if form.non_field_errors %}
 <div class="non_form_errors">
@@ -34,7 +39,7 @@
   </div>
   {% endif %}
 
-  <input type="submit" value="Register" class="submit-button"/>
+  <input type="submit" value="Register" class="register" style="text-align:center;vertical-align:middel">
 
 
 
