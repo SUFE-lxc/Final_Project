@@ -1,0 +1,7 @@
+/* Macbook */
+position: relative;
+width: 1152px;
+height: 700px;
+
+
+background: rgb(255, 247, 230);
