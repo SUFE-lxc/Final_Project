@@ -6,3 +6,10 @@
 ## 组名：冲59分
 ## 组长：戴嘉路
 ## 组员：解德山、吕相成、费煜章、戴嘉路、张寇誉、陈格、牛薪焱、丁小诺、康雨晴
+---
+# 使用说明
+- 打开cmd或power shell 克隆项目仓库：`git clone https://github.com/SUFE-lxc/Final_Project `.
+- 进入项目文件夹：`cd Final_Project`,`cd Zarathustra`.
+- 运行项目文件`python manage.py runserver`.
+- 在网页中打开生成的地址即可运行i项目.
+

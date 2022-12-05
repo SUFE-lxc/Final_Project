@@ -241,6 +241,9 @@ border-left: 2px dotted rgb(159, 178, 189);
   font-family:"华文彩云";
 }
 
+.title2{
+  font-family:"宋体"；
+}
 
 div.form-item{
   position: relative;
