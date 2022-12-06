@@ -1,4 +1,3 @@
-
 * { /*全局配置*/
   box-sizing: border-box;
   font-size: 3vh;
@@ -95,18 +94,43 @@ body {
   border-left-color: #Fffdd0;
   transition: border-color 0s ease-out 0.6s, width 0.3s ease-out 0.6s, height 0.3s ease-out 1s;
 }
-
-.card-container{
-  width: 70vw; height: max-content;
-  margin:0 auto;
-  padding:2px 4px;
+/*主页样式设置*/
+.box {
+       overflow: hidden;
+       position: relative;
+       width: 800px;
+       height: 200px;
+       border: 2px solid #5FBB9C;
+       background-color:#Fffdd0;
+       margin: 100px auto;
+       transition: all .2s;
 }
+
+.box1 {
+    position: absolute;
+    left: -110%;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(90deg, rgba(95, 187, 156, 0), rgba(95, 187, 156, .5), rgba(95, 187, 156, 0));
+    transform: skew(-30deg);
+ }
+.box:hover .box1{
+       left: 110%;
+       transition: all 1s;
+}
+.box:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 26px 40px -24px rgb(0 36 100 / 50%);
+}
+
 
 .card-hr{
   border-top:5px;
   margin:10px;
   border-color: rgb(187, 187, 187);
 }
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -250,7 +274,7 @@ border-left: 2px dotted rgb(159, 178, 189);
 .title3{
     font-size:20px;
     text-align:center;
-    margin-left: -400px;
+
 }
 
 .demoInput{
@@ -269,7 +293,6 @@ border-left: 2px dotted rgb(159, 178, 189);
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
-
 
 
 /*登录注册界面输入框格式*/
