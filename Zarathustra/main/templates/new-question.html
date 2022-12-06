@@ -10,15 +10,18 @@
 
 
     <h1 class="title3">Your question</h1>
-    <input type="text" name="title" required="" class="demoInput" placeholder="what's your problem?" autofocus="" maxlength="200" id="id_title"  >
+  <div align="center">
+    <input type="text" name="title" required="" class="demoInput" placeholder="what's your problem?"  autofocus="" maxlength="200" id="id_title"  >
+    </div>
     <span class="error"> {{form.title.errors}}</span>
 
 
     <h1 class="title3">Description</h1>
-
+  <div align="center">
   <textarea style="font-family:Microsoft soft " name="body" cols="53" rows="10" required="" id="id_body" placeholder=" Supplement the explanation of the question"></textarea>
+    </div>
     <span class="error"> {{form.body.errors}}</span>
-
+  
   <input type="submit" value="submit" class="submit-button"/>
 
 
