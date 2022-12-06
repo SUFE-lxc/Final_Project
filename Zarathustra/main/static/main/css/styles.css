@@ -270,9 +270,7 @@ border-left: 2px dotted rgb(159, 178, 189);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
 }
 
-.submit-button{
-  margin-top:100px;
-}
+
 
 /*登录注册界面输入框格式*/
 .title {
