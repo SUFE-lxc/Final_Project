@@ -6,14 +6,18 @@
 {% for question in questions %}
 
 <div class="card-container" ">
-  <div class="card justify-content-between">
-    <div class="container question1">
+
+      <div class="box">
+    <div class="box1"><!--问题卡片-->
+    </div>
+<!--问题标题-->
       <a class="qtext" href="{% url 'question' question.id %}">
           {{question.title}}</a>
-         <hr style="margin: 2px;">
+         <hr style="margin: 2px;"><!--卡片间隔-->
+        <!--问题描述-->
           <div class="body-ellipse" style="font-size: smaller; color:rgb(66, 74, 83)">{{question.body}}</div>
           <div style="font-size: smaller; color:lightslategrey">{{question.created_at}}</div>
-        </div>
+
     </div>
     
 </div>
