@@ -11,5 +11,5 @@
 - 打开cmd或power shell 克隆项目仓库：`git clone https://github.com/SUFE-lxc/Final_Project `.
 - 进入项目文件夹：`cd Final_Project`,`cd Zarathustra`.
 - 运行项目文件`python manage.py runserver`.
-- 在网页中打开生成的地址即可运行i项目.
+- 在网页中打开生成的地址即可运行该项目.
 
