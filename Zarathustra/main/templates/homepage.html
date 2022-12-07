@@ -13,9 +13,13 @@
 <!--问题标题-->
       <a class="qtext" href="{% url 'question' question.id %}">
           {{question.title}}</a>
-         <hr style="margin: 2px;"><!--卡片间隔-->
+
+         <hr style="margin: 10px;"><!--卡片间隔-->
         <!--问题描述-->
           <div class="body-ellipse" style="font-size: smaller; color:rgb(66, 74, 83)">{{question.body}}</div>
+
+          <hr style="margin: 10px;"><!--卡片间隔-->
+
           <div style="font-size: smaller; color:lightslategrey">{{question.created_at}}</div>
 
     </div>
@@ -26,3 +30,4 @@
 {% endfor %} 
 
 {% endblock %}
+
