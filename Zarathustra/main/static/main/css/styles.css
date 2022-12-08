@@ -173,8 +173,10 @@ img {
   padding: 30px;
 }
 
-.question-title, .title{
+.question-title {
   margin: 0 7vw;
+  font-size:40px;
+  color:#5FBB9C;
 }
 .question-body,.question-author{
   margin-left:7vw ;
@@ -182,6 +184,12 @@ img {
 
 .question-author{
   color:gray;
+}
+
+.submit-button2 {
+  position: relative;
+
+  top: 300px;
 }
 
 .votes{
@@ -439,6 +447,7 @@ div.form-item p.formLabel {
 .reply-form-container.enabled {
   display: block;
 }
+
 .reply-button,.up-vote,.down-vote{
   border-style: none;
   color:#2874f0;
