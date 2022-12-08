@@ -2,8 +2,9 @@
 {% block content %}
 <div class="page question-page">
   <h1 class="question-title">{{question.title}}</h1>
-
+<hr .card-hr>
 <div class="question-body">{{question.body}}</div>
+    <hr .card-hr>
 <span class="question-author">asked by {{question.author}} |  {{question.created_at}}</span>
 <hr .card-hr>
 <div class="response-container">
@@ -26,12 +27,11 @@
 <form action="" class="response-form" method="post">
     {% csrf_token %}
 
-    <div class="field-wrapper">
-        <label for="{{response_form.body.id_for_label}}"> Your answer</label>
-        {{response_form.body}}
+    <textarea style="font-family:Microsoft soft;font-weight: 700 " name="body" cols="53" rows="10" required="" placeholder="Write your answer here"></textarea>
+
         
-      </div>
-      <input type="submit" value="Send" class="submit-button"/>
+
+      <input type="submit" value="Send" class="submit-button2"/>
 
 
 
@@ -42,3 +42,4 @@
 
 </div>
 {% endblock %}
+
