@@ -1,4 +1,4 @@
-<blockquote id="{{response.id}}">
+<blockquote id="{{response.id}}" xmlns="http://www.w3.org/1999/html">
   <div class="response-body">     {{response.body}}</div>
   <div class="updates">
     <div class="votes">
@@ -8,7 +8,6 @@
     <h6 id="downvotes">0</h6>
     {% if user.is_authenticated %}
       <button class="reply-button" onclick="handleReplyButton({{response.id}})">reply</button>
-     
     {% endif %}
     </div>
 <div class="response-author"> ans by 
@@ -20,11 +19,18 @@
       {% csrf_token %}
       <form class="reply" method="post" action="/reply" >
         {% csrf_token %}
-<input type="hidden" name="question" value="{{question.id}}"/>
-<input type="hidden" name="parent" value="{{response.id}}"/>
+        <input type="hidden" name="csrfmiddlewaretoken" value="ZyWC09C1wAM9VT1G0JxrLEDEkbaPZRled8CIKZ6dlZ3bzrlFYysm8rAvxnXIKBdw">
+        <input type="hidden" name="question" value="{{question.id}}"/>
+        <input type="hidden" name="parent" value="{{response.id}}"/>
+<div class="inputBox">
+        <input type="text" class="effect-1" name="body" placeholder="Your Reply" required="" id="id_body">
+    <span class="focus-border">
+        <i></i>
+    </span>
+</div>
 
-{{response_form.body}}
-<button type="button" onclick="handleCancelReply({{response.id}})"  class="reply-form-cancel-button">cancel</button>
+          <button class="cancel" type="button" onclick="handleCancelReply({{response.id}})"  class="reply-form-cancel-button">cancel</button>
+
 <input class="reply-form-submit-button" type="submit" value="Reply">
       </form>
     </blockquote>
