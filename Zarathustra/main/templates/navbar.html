@@ -5,16 +5,30 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
         <span class="logo">Zarathustra</span></a>
+
     </div>
 
+          <div class="field" id="searchform">
+            <input type="text" value="" id="searchterm" >
+            <button type="button" id="search">Search</button>
+        </div>
+
+        <div class="list-group"></div>
+
+
+<!-- By Coding Market -->
+
+
+
     <ul class="nav navbar-nav">
+
       <li class=" nav-item">
+
         <a href="{% url 'index' %}" >Home</a>
       </li>
 
       {% if user.is_authenticated %}   <!--如果
       已经认证-->
-
       <li class=" nav-item"><a href="{% url 'new-question' %}">New Question</a>
   </li>
 
@@ -31,4 +45,81 @@
     </ul>
   </div>
 </nav>
-  
+    <style>
+
+.container{
+
+}
+
+.field {
+  display:flex;
+  position:realtive;
+  width:50%;
+  height:50%;
+  flex-direction:row;
+  box-shadow:
+   1px 1px 0 rgb(22, 160, 133),
+   2px 2px 0 rgb(22, 160, 133),
+   3px 3px 0 rgb(22, 160, 133),
+   4px 4px 0 rgb(22, 160, 133),
+   5px 5px 0 rgb(22, 160, 133),
+   6px 6px 0 rgb(22, 160, 133),
+   7px 7px 0 rgb(22, 160, 133);
+}
+
+.field>input[type=text],
+.field>button {
+  display:block;
+  font:1.2em 'Montserrat Alternates';
+}
+
+.field>input[type=text] {
+  flex:1;
+
+  border:0.2em solid rgb(26, 188, 156);
+}
+
+.field>button {
+  padding:0.6em 0.8em;
+  background-color:rgb(26, 188, 156);
+  color:while;
+  border:none;
+}
+    </style>
+
+<script>
+$(document).ready(function() {
+    var artList = "";
+    $("button").click(function() {
+
+        //Getting the user entry from serach bar
+        var inp = $("input").val();
+
+        //Retrieving JSON from Wikipedia API
+        $.ajax({
+            url: "https://en.wikipedia.org/w/api.php?format=json&action=query&generator=search&gsrnamespace=0&gsrsearch=" + inp + "&gsrlimit=10&prop=pageimages|extracts&pilimit=max&exintro&explaintext&exsentences=1&exlimit=max",
+            dataType: "jsonp",
+            success: function(parsed) {
+                var result, pages = parsed.query.pages;
+              //Display the data to the html
+                for (result in pages) {
+                    artList += '<a href=' + '"' + 'https://en.wikipedia.org/?curid=' + pages[result].pageid + '"' + 'class=' + '"' + 'list-group-item ' + '"' + '>' +
+                        '<h4 class=' + '"' + 'list-group-item-heading' + '"' + '>' + pages[result].title + '</h4>' +
+                        '<p class=' + '"' + 'list-group-item-text' + '"' + '>' + pages[result].extract + '</p></a></br>';
+                }
+                $(".list-group").html(artList);
+            }
+        });
+
+
+    });
+
+});
+</script>
+<script>
+$(".btn").click(function(){
+  $(".input").toggleClass("active").focus;
+  $(this).toggleClass("animate");
+  $(".input").val("");
+});
+</script>
