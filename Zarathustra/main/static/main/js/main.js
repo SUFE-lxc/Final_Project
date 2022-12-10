@@ -7,7 +7,21 @@ document.getElementById("reply-button").style.display = "none";
   }
 }
 
+function handleUpVote(responseId){
+  score = document.getElementById(`upvotes-${responseId}`);
+  var scoreValue = score.innerHTML;
+  scoreValue++;
+  score.innerHTML = scoreValue;
 
+}
+
+function handleDownVote(responseId){
+  score = document.getElementById(`downvotes-${responseId}`)
+  score.innerHTML ="0";
+  var scoreValue = 0;
+  scoreValue++;
+  score.innerHTML = scoreValue;
+}
 function handleCancelReply(responseId) {
   const replyFormContainer = document.getElementById(`reply-form-container-${responseId}`);
   if (replyFormContainer) {
@@ -16,6 +30,7 @@ function handleCancelReply(responseId) {
     document.getElementById("reply-button").style.display = "block";
   }
 }
+
 
 $(document).ready(function(){
 	var formInputs = $('input[type="username"],input[type="password"]');
