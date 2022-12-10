@@ -17,7 +17,6 @@ function handleUpVote(responseId){
 
 function handleDownVote(responseId){
   score = document.getElementById(`downvotes-${responseId}`)
-  score.innerHTML ="0";
   var scoreValue = score.innerHTML;
   scoreValue++;
   score.innerHTML = scoreValue;
