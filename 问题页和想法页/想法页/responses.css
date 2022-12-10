@@ -1,0 +1,115 @@
+/* 想法页 */
+
+/* question title，responses，upvote 0，downvote 0，reply 的字体与颜色一样*/
+
+.qrudr{
+
+position: absolute;
+width: 995px;
+height: 74px;
+top: 46px;
+left: 27px;
+
+
+color: rgb(95, 187, 156);
+font-family: jiangxizhuokai;
+font-size: 48px;
+font-weight: 400;
+line-height: 63px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+
+/* question author,answerer */
+.qaa{
+
+position: absolute;
+width: 427px;
+height: 37px;
+top: 204px;
+left: 696px;
+
+
+color: rgb(0, 0, 0);
+font-family: jiangxizhuokai;
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+
+/* answer */
+.answer{
+    
+position: absolute;
+width: 1045px;
+height: 254px;
+top: 353px;
+left: 69px;
+
+
+color: rgb(0, 0, 0);
+font-family: Source Han Serif CN;
+font-size: 24px;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
+
+/* 输入框 */
+.your-answer{
+position: absolute;
+width: 1019px;
+height: 37px;
+top: 933px;
+left: 69px;
+
+
+background: rgb(255, 255, 255);
+box-shadow: 4px 4px 4px rgba(251, 230, 7, 0.25);;
+}
+
+/* submit 的图标 */
+.sumbit{
+position: absolute;
+width: 166px;
+height: 43px;
+top: 0;
+left: 0;
+
+
+background: rgb(251, 251, 124);
+border-radius: 50px;
+}
+
+/* submit 的字体 */
+.submit2{
+position: absolute;
+width: 120px;
+height: 43px;
+top: 12px;
+left: 23px;
+
+
+color: rgb(95, 187, 156);
+font-family: jiangxizhuokai;
+font-size: 36px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0px;
+text-align: center;
+}
+
+
+
+
+
+
