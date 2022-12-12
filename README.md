@@ -10,7 +10,6 @@
 # 使用说明
 - 打开cmd或power shell 克隆项目仓库：`git clone https://github.com/SUFE-lxc/Final_Project `.
 - 进入项目文件夹：`cd Final_Project`,`cd Zarathustra`.
-- 安装项目依赖:`pip install -r requirePackage.txt`.
-- 运行项目文件:`python manage.py runserver`.
+- 运行项目文件:`python manage.py runserver`.(若出现importError，则需要调django版本与python版本一致)
 - 在网页中打开生成的地址即可运行该项目.
 
